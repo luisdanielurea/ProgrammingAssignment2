@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Solve the inverse of a matrix inside a matrix cache object. 
+## Check inside the matrix cache object if it was already, in case it was get the result already calculated 
+## if not, solve it and store the inverse.
 
-## Write a short comment describing this function
+## A cache object that store a matrix and its inverse after it was calculated
 
 makeCacheMatrix <- function(x = matrix()) {
      Inv <- NULL
@@ -18,7 +19,8 @@ makeCacheMatrix <- function(x = matrix()) {
  }
 
 
-## Write a short comment describing this function
+## Invoke makeCacheMatrix in order to know if the Inverse was calculated
+## If it was calucaled take from the cache matrix object, if not, it calculates it and store it inside it.
 
 
 cacheSolve <- function(x,...) {
